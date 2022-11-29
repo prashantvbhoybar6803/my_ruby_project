@@ -1,0 +1,17 @@
+<div>
+    <h4> Sign Up </h4>
+    <%= form_with(model: @user, url: signup_path,method: "post") do |f| %>
+        <%= f.text_field :first_name,placeholder: "First Name" %>
+        <br><br>
+        <%= f.text_field :last_name , placeholder: "Last Name" %>
+        <br><br>
+        <%= f.email_field :email , placeholder: "Email" %>
+        <br><br>
+        <%= f.password_field :password , placeholder: "Password" %>
+        <br><br>
+        <%= f.password_field :password_confirmation , placeholder: "Confirm Password" %>
+        <br><br>
+        <%= f.submit :create %>
+    <% end %>
+
+</div>

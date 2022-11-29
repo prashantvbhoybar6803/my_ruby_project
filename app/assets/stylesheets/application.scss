@@ -17,7 +17,15 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
-body {
+body,#SignUp_Login {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
+#SignUp_Login :first-child{
+    margin-right: 1rem;
+}
+#LogIn{
+    margin-left: 1rem;
+}
+
