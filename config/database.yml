@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: my_ruby_project_development
+  host: localhost
+  port: 5432
+  username: postgres
+  password: p12345678
+
+# test:
+#   <<: *default
+#   database: my_ruby_project_test
+
+production:
+  <<: *default
+  database: my_ruby_project_production
+  username: my_ruby_project
+  password: <%= ENV["MY_RUBY_PROJECT_DATABASE_PASSWORD"] %>
