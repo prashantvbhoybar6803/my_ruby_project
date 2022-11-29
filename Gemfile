@@ -7,7 +7,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -42,6 +42,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Adding bootstrap 
+gem 'bootstrap', '~> 5.2.2'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
